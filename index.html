@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alsoufi Cars Rental</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lang-switch" onclick="toggleLang()">EN</div>
+
+<header>
+<h2>Alsoufi Cars Rental</h2>
+</header>
+
+<div class="hero">
+<h1 id="heroText">تجربة فاخرة لتأجير السيارات</h1>
+</div>
+
+<div class="container">
+<h2 id="carsTitle">السيارات</h2>
+<div class="card">Luxury Car - 50$</div>
+<div class="card">Sport Car - 70$</div>
+</div>
+
+<div class="container">
+<h2 id="bookingTitle">الحجز</h2>
+<input id="name" placeholder="الاسم">
+<input id="phone" placeholder="رقم الهاتف">
+<select id="car">
+<option value="Luxury|50">Luxury</option>
+<option value="Sport|70">Sport</option>
+</select>
+<input type="date" id="start">
+<input type="date" id="end">
+<button onclick="book()" id="bookBtn">احجز</button>
+</div>
+
+<div class="container">
+<h2>لوحة التحكم</h2>
+<div class="admin" id="loginBox">
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+</div>
+
+<div class="admin hidden" id="dashboard">
+<h3>الحجوزات</h3>
+<div id="orders"></div>
+<button onclick="logout()">Logout</button>
+</div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
